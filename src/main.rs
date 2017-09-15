@@ -58,7 +58,7 @@ fn main() {
         num_runs[door_switch_decision] = num_runs[door_switch_decision] + 1;
     }
 
-    println!("Average results:\nDid not switch doors: {}\nSwitched doors: {}",
+    println!("Average results:\nSuccess rate when the first door was kept: {}\nSuccess rate when the first door was switched: {}",
              results[NO_SWITCH] as f64 / num_runs[NO_SWITCH] as f64,
              results[SWITCH] as f64 / num_runs[SWITCH] as f64);
 }
